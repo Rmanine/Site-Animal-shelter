@@ -1,0 +1,10 @@
+*{
+    padding: 0em;
+    margin: 0em;
+}
+
+html, body{
+    font-size: 100%;
+    font-family: "Poppins", Roboto, sans-serif;
+    line-height: 1.5em;
+}
