@@ -2,6 +2,10 @@ name: Build LaTeX document
 on: 
     push:
         branches: [ '**' ]
+
+permissions:
+  contents: write
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
