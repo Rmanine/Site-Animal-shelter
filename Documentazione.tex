@@ -1,0 +1,230 @@
+\documentclass[12pt,a4paper]{article} % Defines the document type as an article with 12pt font size on A4 paper.
+
+% Importing packages
+\usepackage[english]{babel} % Sets the document language to English, adjusting hyphenation and language-specific typographic rules.
+\usepackage[lmargin=2.5cm,rmargin=2.5cm,tmargin=2.5cm,bmargin=2.5cm]{geometry} % Sets custom page margins: left/right 2.5cm, top 2.5cm, bottom 2.5cm.
+
+% Loading packages
+\usepackage{hyperref}    % Enables hyperlinks for references, URLs, and citations.
+\usepackage{xcolor}      % Provides tools for defining and using colors.
+\usepackage{graphicx}    % Allows inclusion of images and graphics.
+\usepackage{caption}     % Customizes captions for figures and tables.
+\usepackage{subcaption}  % Supports subfigures and subcaptions within figures.
+\usepackage{minted}      % Enables syntax highlighting for code listings.
+\usepackage[T1]{fontenc} % Ensures proper font encoding, important for correct character rendering. Don't touch this.
+\usepackage{lmodern}     % Sets the font to something more modern and easy to read.
+\usepackage{setspace}    % Provides control over line spacing.
+\usepackage{csquotes}    % Improves handling of quotations.
+\usepackage{setspace}    % Used to set line spacing
+\usepackage{longtable,booktabs,array} % Packages for advanced table formatting.
+\usepackage[
+  backend=biber,
+  style=apa,  
+]{biblatex}  % Manages citations and bibliography with APA style.
+
+\setstretch{1.5} % Sets line spacing
+
+\definecolor{LightGray}{gray}{0.9}  % Defines a custom color 'LightGray' with 90% gray, used for the code block background.
+\hypersetup{                        % Configures hyperlink colors and behavior.
+  colorlinks=true,                  % Enable colored links instead of boxes.
+  linkcolor={blue},                 % Sets link color to blue.
+  filecolor={maroon},               % Sets file link color to maroon.
+  citecolor={blue},                 % Sets citation link color to blue.
+  urlcolor={blue}}                  % Sets URL link color to blue.
+
+\title{Thesis / Paper Title}        % Sets the document title.
+\makeatletter
+\providecommand{\subtitle}[1]{%     % Custom command to add a subtitle.
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+
+\makeatother
+\subtitle{Thesis / Paper Subtitle}  % Sets the document subtitle.
+\author{Firstname Lastname\\% Sets the author's name.
+Mat No.: 12-345-678\\       % Sets the author's matriculation number.
+Supervisor(s): Prof. Dr. Firstname Lastname} % Sets the supervisor of the paper / thesis     
+\date{2025-10-01}                   % Sets the document date.
+
+% \renewcommand{\familydefault}{\sfdefault} % Changes the default font to one without serifs
+
+% From this point, the preamble ends and the actual content of the document starts.
+\begin{document}
+\pagenumbering{gobble} % Stops counting the pages from this point until changed again.
+\maketitle
+\begin{abstract}
+This is the LaTeX template (\textbf{Version 1.1}) from the DH Lab of the University of Basel. It is suitable for Seminar Papers and Master's / PhD theses, but can be adapted to fit a variety of use cases. It was created by Stefan Freitag and is derived from the Quarto template, which is also available from the DH Lab.
+
+The abstract of your paper / thesis goes right here. It will appear on the cover sheet (very first page) of the PDF, together with the title, subtitle, author name and date.
+
+If you do not want your document to have an abstract, you can also simple delete the 'abstract' part (or comment it out) with all its content and the final document will be created without it.
+\end{abstract}
+\begin{center}
+    \vfill
+    \begin{figure}
+        \centering
+        \begin{subfigure}{.3\textwidth}
+          \centering
+          \includegraphics[width=.8\linewidth]{docs_assets/logo_unipd.png}
+        \end{subfigure}%
+        \begin{subfigure}{.3\textwidth}
+          \centering
+          \includegraphics[width=.8\linewidth]{docs_assets/logo_sito.png}
+        \end{subfigure}
+        \end{figure}
+        \setcounter{figure}{0}
+        
+    Università di Padova\\
+    Facoltà di Informatica\\
+    Corso di Tecnlogie web a.a. 2025/26\\
+\end{center}
+\newpage
+\renewcommand*\contentsname{Table of Contents} % This controls the title of your table of contents.
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{5} % Sets the maximum sublevel to be displayed within the table of contents.
+\tableofcontents
+}
+\newpage
+\pagenumbering{arabic}\setstretch{1.5} % Overwrites the previous command, pages are counted as normal from this point.
+
+
+\section{The Basics}
+
+What is LaTeX? You may have not heard of it before, but you have almost certainly seen it used somewhere, even without knowing. LaTeX is, in short, a language that describes both content \textbf{and} layout of a text, as opposed to regular word processors like \emph{Microsoft Word}. It is a very powerful tool for scientific publication and, when used correctly, gives you almost infinite control over the layout of your document and makes it look very professional.
+
+\textbf{Note}: This is \textbf{not} a guide on how to write a paper / thesis. If you need guidance on those topics, check the appropriate DH
+Lab \href{https://dhlab.philhist.unibas.ch/en/master-course/seminar-masterarbeit-masterpruefung/}{resources} or ask a supervisor.
+
+Instead, this template is meant to introduce you to what LaTeX can do and give you a starting point to use it on your own. While it is of course possible to install LaTeX locally and use it this way, it is recommended to use it via \href{https://www.overleaf.com}{Overleaf}, an online LaTeX editor that requires no installation and runs completely in the browser. This has multiple benefits over a local install: It works regardless of your device and your document and its associated files are always up to date and secure. All in all, it is clearly the most convenient and easy way to use LaTeX. This of course requires an internet connection to be used, which might be a downside to you.
+
+\textbf{Note}: As of September 2025, Overleaf has drastically reduced its free compile time limit to a maximum of 10 seconds. This is incredibly restrictive, especially for projects with lots of figures or references. In fact, it may even be insufficient for this template. If this happens, you have multiple options: you could upgrade to Overleaf's \href{https://www.overleaf.com/user/subscription/plans?plan=student&period=monthly}{student plan} for more compile time, migrate your project to a different service such as \href{https://crixet.com/}{Crixet}, or install LaTeX locally on your computer and work on your document that way.
+
+If you have questions that are not addressed within this template, Overleaf offers \href{https://www.overleaf.com/learn/latex/Tutorials}{tutorials} on nearly everything as well as a comprehensive \href{https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes}{guide} to understand LaTeX in 30 minutes. If all else fails, you can also ask ChatGPT. From experience, it is very adept at writing and correcting LaTeX-code. As you can already see in this chapter, you can put clickable links in your document.
+
+\section{Structure of a document}
+
+The most important file when using LaTeX is your \texttt{.tex} file. This is the file in which you write the text for your paper / thesis, while also describing its layout.
+
+Each file starts with a preamble, in which you can change metadata and other settings of the document such as its page margins and also import and set up packages you want to use. In this template, the preamble is deliberately kept as short and concise as possible, but can of course be extended by you. Images, links, references, code etc. can be embedded within the document and will be rendered when the document is compiled. Pages are auto-numbered, starting after the table of contents.
+
+The basic structure of a \texttt{.tex} file looks like this:
+
+\begin{verbatim}
+-----
+This is the document preamble
+\usepackage{example}
+...
+-----
+\begin{document}
+...
+This is my Master's Thesis.
+...
+\end{document}
+\end{verbatim}
+
+Segmenting your document into sections and subsections works like this:
+
+\section{This is a section}
+
+\subsection{This is a sub-section}
+
+\subsubsection{This is a sub-sub-section}
+
+\paragraph{This is a paragraph}
+
+\subparagraph{This is a sub-paragraph}
+
+Up to 5 sublevels are possible, as you can see. By default, the sections are automatically numbered while the (sub)-paragraphs are not. This of course can be changed by you. The table of contents will be automatically generated (including said numbering and page numbers) upon compiling your document by using the using the \texttt{\string\tableofcontents} command. \textbf{You do not need to write it yourself.}
+
+See \href{https://www.overleaf.com/learn/latex/Sections_and_chapters}{this} part of the tutorial for more information about sections and chapters.
+
+\section{Formatting your document}
+
+LaTeX supports a variety of formatting options:
+
+\emph{You can write in italics.}
+
+\textbf{Or bold.}
+
+\textbf{\emph{Or both at the same time.}}
+
+You can also superscript\textsuperscript{text} or subscript\textsubscript{text}.
+
+You can also write lists (unordered or ordered):
+
+\begin{itemize}
+\item
+    Example list
+\item 
+    This one is unordered in the form of bullet points
+\end{itemize}
+
+\begin{enumerate}
+\item
+    This
+\item
+    is
+\item
+    an
+\item
+    ordered
+\item
+    list
+\end{enumerate}
+
+and use tables (with various formatting options, this is just an example):
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c c c|} 
+ \hline
+ Col1 & Col2 & Col3 \\ [0.5ex] 
+ \hline\hline
+ 1 & 2 & 3 \\ 
+ 2 & 3 & 4 \\
+ 3 & 4 & 5 \\
+ 4 & 5 & 6 \\
+ 5 & 6 & 7 \\ [1ex] 
+ \hline
+\end{tabular}
+\caption{Example table}
+\end{table}
+
+This is a more complex table, but it shows what is theoretically possible. As you can see, the tables are automatically numbered as well, as long as you give them a caption.
+
+It is possible to automatically generate a list of tables at any point of the document. To do this, use the command \texttt{\string\listoftables}:
+
+\listoftables
+
+You can also insert page breaks like this:
+
+\newpage{}
+
+These are only some examples, please see the respective sections in the tutorial for more: \href{https://www.overleaf.com/learn/latex/Bold%2C_italics_and_underlining}{text formatting}, \href{https://www.overleaf.com/learn/latex/Lists}{lists} and \href{https://www.overleaf.com/learn/latex/Tables}{tables}.
+
+\section{Using code}
+
+When writing a paper or thesis in the field of Digital Humanities, it is likely that you will need to also use code within your document. This is possible with LaTeX, if you are working with a lot of code however and / or want it to be executable within the document file, it is recommended to use the \href{https://github.com/SteFre95/Digital_Humanities_Lab_UniBas_Quarto_Template}{Quarto template} of the DH Lab instead. This also enables you to easily include the output of your code in a document. It is, however, more complex to set up, get running and work with.
+
+In order to properly display code including syntax highlighting, this template employs the \texttt{minted} package, which works like this:
+
+\begin{minted}
+[
+bgcolor=LightGray
+]
+{python}
+
+# This is a code cell written and highlighted with the minted package
+
+for n in range(3):
+    print('This is an example for a Python code cell')
+\end{minted}
+
+There are many ways to customize how the code is displayed, refer to \href{https://www.overleaf.com/learn/latex/Code_Highlighting_with_minted}{this} section of the Overleaf tutorial for further information. There, you will also see how to include code written in a separate file.
+
+Keep in mind that you need to manually include the output of the code in the document, should this be important to you. The LaTeX compile process does \textbf{not} run the code in any way.
+
+\section{Citations and References}
+
+
+\end{document}
