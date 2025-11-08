@@ -39,10 +39,7 @@
 }
 
 \makeatother
-\subtitle{Thesis / Paper Subtitle}  % Sets the document subtitle.
-\author{Firstname Lastname\\% Sets the author's name.
-Mat No.: 12-345-678\\       % Sets the author's matriculation number.
-Supervisor(s): Prof. Dr. Firstname Lastname} % Sets the supervisor of the paper / thesis     
+\subtitle{Thesis / Paper Subtitle}  % Sets the document subtitle.    
 \date{2025-10-01}                   % Sets the document date.
 
 % \renewcommand{\familydefault}{\sfdefault} % Changes the default font to one without serifs
@@ -51,12 +48,23 @@ Supervisor(s): Prof. Dr. Firstname Lastname} % Sets the supervisor of the paper 
 \begin{document}
 \pagenumbering{gobble} % Stops counting the pages from this point until changed again.
 \maketitle
+\begin{center}
+\begin{tabular}{c c}
+\textbf{Nome} & \textbf{Matricola} \\
+\hline
+Baleanu Valeria & ' \\
+Ballardin Sara  & ' \\
+Loparco Davide  & ' \\
+Manisi Riccardo & 2111948 \\
+\end{tabular}
+\end{center}
+\vspace{1cm}
+% --- Fine tabella membri ---
+
 \begin{abstract}
 This is the LaTeX template (\textbf{Version 1.1}) from the DH Lab of the University of Basel. It is suitable for Seminar Papers and Master's / PhD theses, but can be adapted to fit a variety of use cases. It was created by Stefan Freitag and is derived from the Quarto template, which is also available from the DH Lab.
 
 The abstract of your paper / thesis goes right here. It will appear on the cover sheet (very first page) of the PDF, together with the title, subtitle, author name and date.
-
-If you do not want your document to have an abstract, you can also simple delete the 'abstract' part (or comment it out) with all its content and the final document will be created without it.
 \end{abstract}
 \begin{center}
     \vfill
