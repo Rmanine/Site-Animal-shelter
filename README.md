@@ -1,2 +1,2 @@
-# Site-Animal-shelter
-Istitutional site for Web Tecnologies course.
+# Zampa Amica
+Progetto relativo al corso di Tecnologie Web dell'Università degli Studi di Padova.
