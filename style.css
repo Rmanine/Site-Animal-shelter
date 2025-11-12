@@ -6,7 +6,6 @@
 }
 
 html, body {
-    font-size: 100%;
     font-family: "Atkinson Hyperlegible", Roboto, sans-serif;
     line-height: 1.5em;
     background-color: var(--bgcolor);
@@ -27,7 +26,7 @@ header {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* centrato con larghezza controllata */
+    width: 80%;
     z-index: 1000;
 }
 
@@ -38,7 +37,7 @@ header {
     border-bottom-right-radius: 30px;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: center; /* centra il contenuto del menu */
+    justify-content: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -60,9 +59,6 @@ header {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    column-count: 0.8em;
     height: 3.5rem;
     width: auto;
 }
@@ -76,14 +72,24 @@ header {
 
 #menu_top ul {
     display: flex;
+    align-items: center;
     column-gap: 1em;
     list-style: none;
+}
+
+#menu_top ul li {
+    display: flex;
+    align-items: center;
 }
 
 #menu_top ul li a {
     color: var(--widgettxtcolor);
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    padding: 0 1rem;
     font-weight: 500;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -103,6 +109,9 @@ header {
     color: var(--widgetcolor);
     font-weight: bold;
     cursor: pointer;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s;
 }
 
@@ -175,6 +184,7 @@ input:checked + .slider:before {
     color: var(--widgettxtcolor);
     border-radius: 10px;
     padding: 0.5rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* MAIN */
