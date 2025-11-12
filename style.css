@@ -19,15 +19,22 @@ html, body{
 header{
     position: fixed;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 70%;
-    background-color: var(--widgetcolor);
-    margin-bottom: 2rem;
     -webkit-border-bottom-right-radius: 30px;
     -webkit-border-bottom-left-radius: 30px;
     -moz-border-radius-bottomright: 30px;
     -moz-border-radius-bottomleft: 30px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--widgetcolor);
+    color: var(--widgettxtcolor);
+    margin-bottom: 2rem;
 }
 
 .menu ul {
@@ -52,13 +59,16 @@ header{
 
 #breadcrumb{
     position: fixed;
-    margin-top: 3rem;
+    top: 4.5rem;
+    left: 50%; 
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5rem 0.9rem;
     background: var(--widgetcolor);
     border-radius: 10px;
+    color: var(--widgettxtcolor);
 }
 
 /* CONTAINER GENERICO */
@@ -74,6 +84,8 @@ header{
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Parte per lo switch light-dark mode */
