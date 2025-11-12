@@ -19,9 +19,15 @@ html, body{
 header{
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 70%;
     background-color: var(--widgetcolor);
     margin-bottom: 2rem;
+    -webkit-border-bottom-right-radius: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    -moz-border-radius-bottomright: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 
 .menu ul {
@@ -41,27 +47,33 @@ header{
 }
 
 .menu ul li a:hover {
-    background-color: #111111;
+    background-color: #bccba5;
 }
 
 #breadcrumb{
     position: fixed;
-    margin-top: 1rem;
-    left: 50%;
-    display: inline-block;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.5rem 0.9rem;
     background: var(--widgetcolor);
     border-radius: 10px;
-    z-index: 900;
 }
 
 /* CONTAINER GENERICO */
 
-.container {
+.container{
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.widget{
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
 }
 
 /* Parte per lo switch light-dark mode */
