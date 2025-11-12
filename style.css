@@ -46,9 +46,10 @@ header {
 .menu_content {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* logo a sinistra, nav a destra */
-    width: 100%;
-    max-width: 1200px; /* evita che si allarghi troppo su schermi grandi */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
 }
 
 /* LOGO */
@@ -59,6 +60,9 @@ header {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    column-count: 0.8em;
     height: 3.5rem;
     width: auto;
 }
@@ -72,7 +76,7 @@ header {
 
 #menu_top ul {
     display: flex;
-    gap: 2rem;
+    column-gap: 1em;
     list-style: none;
 }
 
@@ -103,7 +107,8 @@ header {
 }
 
 .button:hover {
-    background-color: #aab892;
+    background-color: var(--widgettxtcolor);
+    color: var(--widgetcolor);
 }
 
 /* SWITCH MODE */
