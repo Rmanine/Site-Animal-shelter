@@ -16,17 +16,18 @@ html, body{
     --widgettxtcolor: #bccba5;
 }
 
-.menu{
+header{
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: var(--widgetcolor);
+    margin-bottom: 2rem;
 }
 
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,13 +35,24 @@ html, body{
 
 .menu ul li a {
     display: block;
-    color: white;
+    color: var(--widgettxtcolor);
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .menu ul li a:hover {
     background-color: #111111;
+}
+
+.breadcrumb{
+    position: fixed;
+    margin-top: 1rem;
+    left: 50%;
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    background: var(--widgetcolor);
+    border-radius: 10px;
+    z-index: 900;
 }
 
 /* CONTAINER GENERICO */
