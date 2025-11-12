@@ -80,6 +80,8 @@ header{
     padding-right: 15px;
 }
 
+/* WIDGET = tutto quello che rappresenta un parte generica nello schermo */
+
 .widget{
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
