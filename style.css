@@ -35,17 +35,8 @@ header{
     color: var(--widgettxtcolor);
 }
 
-#menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
 .logo_link{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+    left: 1em
 }
 
 .logo{
@@ -58,6 +49,7 @@ header{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    right: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,12 +71,10 @@ header{
     top: 4.5em;
     left: 50%; 
     transform: translateX(-50%);
-    margin-top: 7rem;
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--widgetcolor);
-    color: var(--widgettxtcolor);
 }
 
 main{
@@ -99,6 +89,11 @@ main{
     margin-left: auto;
     padding-left: 1em;
     padding-right: 1em;
+    position: relative;
+}
+
+.container > *{
+    position: absolute;
 }
 
 /* WIDGET = tutto quello che rappresenta un parte generica nello schermo */
@@ -110,6 +105,15 @@ main{
     padding: 1em 1em 1em 1em;
     background-color: var(--widgettxtcolor);
     color: var(--widgetcolor);
+}
+
+.widget_type_2{
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    padding: 1em 1em 1em 1em;
+    background: var(--widgetcolor);
+    color: var(--widgettxtcolor);
 }
 
 /* Parte per lo switch light-dark mode */
