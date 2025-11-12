@@ -16,44 +16,49 @@ html, body{
     --widgettxtcolor: #bccba5;
 }
 
+.menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333333;
-  display: flex;
-  justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu ul li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .menu ul li a:hover {
-  background-color: #111111;
+    background-color: #111111;
 }
 
+/* CONTAINER GENERICO */
+
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Parte per lo switch light-dark mode */
 
-
 .mode_switch_wrapper{
-    display: flex;
+    display: inline-flex;
     align-items: center;
-
-    em {
-        margin-left: 10px;
-        font-size: 1rem;
-    }
+    gap: 10px;
+    margin-left: 1rem;
 }
 
 .mode_switch{
@@ -63,7 +68,7 @@ html, body{
     width: 60px;
 }
 
-.mode_switchinput {
+.mode_switch input {
     display:none;
 }
 
@@ -87,6 +92,7 @@ html, body{
     position: absolute;
     transition: .4s;
     width: 26px;
+    border-radius: 50%;
 }
 
 input:checked + .slider {
