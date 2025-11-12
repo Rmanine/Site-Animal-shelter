@@ -9,14 +9,51 @@ html, body{
     line-height: 1.5em;
 }
 
+:root{
+    --bgcolor: #eeede8;
+    --maintxtcolor: #000;
+    --widgetcolor: #3a5a40;
+    --widgettxtcolor: #bccba5;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  background-color: #111111;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Parte per lo switch light-dark mode */
+
+
 .mode_switch_wrapper{
     display: flex;
-  align-items: center;
+    align-items: center;
 
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
+    em {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
 }
 
 .mode_switch{
@@ -26,41 +63,45 @@ html, body{
     width: 60px;
 }
 
+.mode_switchinput {
+    display:none;
+}
+
 .slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
 }
 
 .slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: .4s;
-  width: 26px;
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
 }
 
 input:checked + .slider {
-  background-color: #66bb6a;
+    background-color: #66bb6a;
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+    transform: translateX(26px);
 }
 
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
