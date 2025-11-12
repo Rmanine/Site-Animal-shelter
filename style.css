@@ -22,6 +22,8 @@ header{
     left: 50%;
     transform: translateX(-50%);
     width: 70%;
+    background-color: var(--widgetcolor);
+    color: var(--widgettxtcolor);
     -webkit-border-bottom-right-radius: 30px;
     -webkit-border-bottom-left-radius: 30px;
     -moz-border-radius-bottomright: 30px;
@@ -29,20 +31,29 @@ header{
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     display: flex;
+    justify-content: space-between; /* logo a sinistra, menu a destra */
+    align-items: center;
+    padding: 0.5em 1em;
+}
+
+/* LOGO */
+.logo_link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
+    height: 2.5rem;
+    width: auto;
+}
+
+/* MENU */
+#menu {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--widgetcolor);
-    color: var(--widgettxtcolor);
-}
-
-.logo_link{
-    left: 1em
-}
-
-.logo{
-    height: 2.5rem; 
-    width: auto;
-    padding: 1em 1em 1em 1em;
+    width: 100%;
 }
 
 .menu ul{
@@ -66,15 +77,18 @@ header{
     background-color: #bccba5;
 }
 
-#breadcrumb{
+#breadcrumb {
     position: fixed;
     top: 4.5em;
-    left: 50%; 
+    left: 50%;
     transform: translateX(-50%);
-    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--widgetcolor);
+    color: var(--widgettxtcolor);
+    border-radius: 10px;
+    padding: 0.5rem 0.9rem;
 }
 
 main{
@@ -90,10 +104,6 @@ main{
     padding-left: 1em;
     padding-right: 1em;
     position: relative;
-}
-
-.container > *{
-    position: absolute;
 }
 
 /* WIDGET = tutto quello che rappresenta un parte generica nello schermo */
