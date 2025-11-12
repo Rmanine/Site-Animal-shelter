@@ -35,7 +35,26 @@ header{
     color: var(--widgettxtcolor);
 }
 
-.menu ul {
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo_link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo{
+    height: 2.5rem; 
+    width: auto;
+    padding: 1em 1em 1em 1em;
+}
+
+.menu ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -51,7 +70,7 @@ header{
     text-decoration: none;
 }
 
-.menu ul li a:hover {
+.menu ul li a:hover{
     background-color: #bccba5;
 }
 
@@ -84,11 +103,13 @@ main{
 
 /* WIDGET = tutto quello che rappresenta un parte generica nello schermo */
 
-.widget{
+.widget_type_1{
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
     padding: 1em 1em 1em 1em;
+    background-color: var(--widgettxtcolor);
+    color: var(--widgetcolor);
 }
 
 /* Parte per lo switch light-dark mode */
