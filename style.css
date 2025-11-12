@@ -16,58 +16,54 @@ html, body{
     --widgettxtcolor: #bccba5;
 }
 
-header{
+header {
     position: fixed;
+    top: 0;
+}
+
+.menu{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 70%;
-    background-color: var(--widgetcolor);
-    color: var(--widgettxtcolor);
     -webkit-border-bottom-right-radius: 30px;
     -webkit-border-bottom-left-radius: 30px;
     -moz-border-radius-bottomright: 30px;
     -moz-border-radius-bottomleft: 30px;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
-    display: flex;
-    justify-content: space-between; /* logo a sinistra, menu a destra */
-    align-items: center;
-    padding: 0.5em 1em;
+    background-color: var(--widgetcolor);
+    color: var(--widgettxtcolor);
+    padding: 1.7em 1.5em;
 }
 
-/* LOGO */
-.logo_link {
+.menu_content{
     display: flex;
     align-items: center;
-    text-decoration: none;
-}
-
-.logo {
-    height: 2.5rem;
-    width: auto;
-}
-
-/* MENU */
-#menu {
-    display: flex;
     justify-content: space-between;
+}
+
+.logo_link{
+
+}
+
+.logo{
+    height: 4rem;
+    width: auto;
+    display: flex;
     align-items: center;
-    width: 100%;
 }
 
 .menu ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    right: 1em;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    column-gap: 2em;
+}
+
+.menu ul li{
+
 }
 
 .menu ul li a {
-    display: block;
     color: var(--widgettxtcolor);
     padding: 14px 16px;
     text-decoration: none;
@@ -77,9 +73,19 @@ header{
     background-color: #bccba5;
 }
 
+.button{
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    padding: 1em 1em 1em 1em;
+    background-color: var(--widgettxtcolor);
+    color: var(--widgetcolor);
+    border: none;
+}
+
 #breadcrumb {
     position: fixed;
-    top: 4.5em;
+    top: 8em;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -107,15 +113,6 @@ main{
 }
 
 /* WIDGET = tutto quello che rappresenta un parte generica nello schermo */
-
-.widget_type_1{
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    padding: 1em 1em 1em 1em;
-    background-color: var(--widgettxtcolor);
-    color: var(--widgetcolor);
-}
 
 .widget_type_2{
     -webkit-border-radius: 30px;
