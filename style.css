@@ -34,7 +34,6 @@ header{
     padding: 1rem 2rem;
     background-color: var(--widgetcolor);
     color: var(--widgettxtcolor);
-    margin-bottom: 2rem;
 }
 
 .menu ul {
@@ -62,6 +61,7 @@ header{
     top: 4.5rem;
     left: 50%; 
     transform: translateX(-50%);
+    margin-top: 10em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,8 +86,7 @@ header{
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 5em 5em 5em 5em;
 }
 
 /* Parte per lo switch light-dark mode */
