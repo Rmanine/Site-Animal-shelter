@@ -43,9 +43,18 @@
         <form action="" method="post">
             <label for="mail">Indirizzo <span lang="en">e-mail</span></label>
             <input type="email" name="email" placeholder="mario.rossi@gmail.com" required>
-            <p>Indirizzo <span lang="en">e-mail</span> attraverso il quale richiedere visite per le adozioni</p>
+            <p class="info-form">
+                Indirizzo <span lang="en">e-mail</span> attraverso il quale richiedere visite per le adozioni
+            </p>
             <label for="password"><span lang="en">Password</span></label>
             <input type="password" name="password" required>
+            <p class="info-form">Deve contenere:</p>
+            <ul class="info-form">
+                <li>Almeno 8 caratteri</li>
+                <li>Una lettera minuscola (a-z)</li>
+                <li>Un carattere speciale</li>
+                <li>Un numero (0-9)</li>
+            </ul>
             <label for="confirmPassword">Conferma <span lang="en">password</span></label>
             <input type="password" name="confirmPassword" required>
             <button type="submit">Registrati</button>
