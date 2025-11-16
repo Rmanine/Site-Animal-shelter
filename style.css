@@ -32,7 +32,7 @@ a:link {
 }
 
 a:visited {
-    color: var(--maintxtcolor);
+    color: var(--visitedlinkcolor);
 }
 
 /* HEADER */
