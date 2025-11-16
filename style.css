@@ -12,6 +12,7 @@
     --widgetcolor: #3a5a40;
     --widgettxtcolor: #bccba5;
     --visitedlinkcolor: #0fabff;
+    --defaultvisitedlinkcolor: #b40b99;
 }
 
 html, body {
@@ -32,13 +33,14 @@ a:link {
 }
 
 a:visited {
-    color: var(--visitedlinkcolor);
+    color: var(--defaultvisitedlinkcolor);
 }
 
 /* HEADER */
 header {
     padding: 0em 1em;
     margin: 1em auto;
+    
 }
 
 /* MENU */
@@ -51,7 +53,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -118,6 +120,11 @@ button:hover {
     margin-bottom: 2em;
     margin-left: 50%;
     transform: translateX(-50%);
+    font-size: 1.2em;
+}
+
+#breadcrumb a:visited {
+    color: var(--visitedlinkcolor);
 }
 
 main {
