@@ -2,6 +2,8 @@ name: Build LaTeX document
 on: 
     push:
         branches: [ '**' ]
+        paths:
+          - 'Documentazione.tex'
 
 permissions:
   contents: write
