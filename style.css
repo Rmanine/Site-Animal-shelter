@@ -123,6 +123,10 @@ button:hover {
     font-size: 1.2em;
 }
 
+#breadcrumb a:link {
+    color: var(--bgcolor);
+}
+
 #breadcrumb a:visited {
     color: var(--visitedlinkcolor);
 }
