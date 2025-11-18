@@ -10,53 +10,56 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <a class="link-to" href="#contenuto">Salta al contenuto</a>
     <header>
-        <h1>Zampa Amica</h1>
         <nav id="menu">
+            <h1>Zampa Amica</h1>
             <ul>
-                <li lang="en">Home</li>
-                <li><a>Chi siamo</a></li>
-                <li><a>I nostri animali</a></li>
-                <li><a>Diventa volontario</a></li>
+                <li lang="en"><a href="../index.html">Home</a></li>
+                <li><a href="./chi_siamo.html">Chi siamo</a></li>
+                <li><a href="">I nostri animali</a></li>
+                <li><a href="./diventa_volontario.html">Diventa volontario</a></li>
             </ul>
+            <button>Accedi</button>
         </nav>
-        <p>luna</p>
-        <button>Accedi</button>
 
     </header>
 
     <nav id="breadcrumb">
-        <p><span lang="en">Home</span> / Registrati</p>
+        <p><a href="../index.html"><span lang="en">Home</span></a> / Registrati</p>
     </nav>
 
     <main id="contenuto">
         <h1>Registrati</h1>
-        <p>Hai già un <span lang="en">account</span>? <a href="pages/accedi.html">Accedi</a></p>
-
+        <p>Hai già un <span lang="en">account</span>? <a href="./accedi.html">Accedi</a></p>
 
         <form action="" method="post">
             <label for="mail">Indirizzo <span lang="en">e-mail</span></label>
-            <input type="email" id="mail" name="mail" placeholder="mario.rossi@gmail.com" required>
-            <p class="info-form">
-                Indirizzo <span lang="en">e-mail</span> attraverso il quale richiedere visite per le adozioni
+            <input type="email" id="mail" name="mail" placeholder="mario.rossi@gmail.com" aria-describedby="info-mail" required>
+            <p class="info-form" id="info-mail">
+                Indirizzo <span lang="en">e-mail</span> attraverso il quale richiedere visite per le adozioni.
             </p>
+            
             <label for="password"><span lang="en">Password</span></label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" aria-describedby="password-info" required>
             <p class="info-form">Deve contenere:</p>
-            <ul class="info-form">
+            <ul class="info-form" id="password-info">
                 <li>Almeno 8 caratteri</li>
                 <li>Una lettera minuscola (a-z)</li>
-                <li>Un carattere speciale</li>
+                <li>Una lettera maiuscola (A-Z)</li>
+                <li>Un carattere speciale (! * + %)</li>
                 <li>Un numero (0-9)</li>
             </ul>
+            
             <label for="confirmed-password">Conferma <span lang="en">password</span></label>
             <input type="password" id="confirmed-password" name="confirmed-password" required>
+            
             <button type="submit">Registrati</button>
         </form>
     </main>
@@ -66,8 +69,9 @@
         <p>
             Tutte le immagini presenti sul sito sono state fornite da X <span lang="en">Copyright</span> 2025 Zampa
             Amica. Tutti i diritti riservati.
-            Sito web realizzato da Baleanu Valeria, Ballardin Sara, Loparco Davide, Manisi Riccardo
+            Sito web realizzato da Baleanu Valeria, Ballardin Sara, Loparco Davide, Manisi Riccardo.
         </p>
     </footer>
 </body>
+
 </html>
