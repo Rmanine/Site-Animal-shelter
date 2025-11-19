@@ -50,7 +50,6 @@ header {
     border-radius: 30px;
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     font-size: 1.2em;
@@ -90,21 +89,44 @@ header {
     color: var(--visitedlinkcolor);
 }
 
-button {
-    border: none;
-    font-size: 1em;
+#menu .stile-bottone-2 {
+    color: var(--bgcolor);
+    background-color: var(--widgetcolor);
     border-radius: 30px;
     padding: 0.6rem 1.2rem;
-    background-color: var(--bgcolor);
-    color: var(--widgetcolor);
-    font-weight: bold;
-    cursor: pointer;
+    border: 3px solid var(--widgettxtcolor);
     transition: all 0.3s;
 }
 
-button:hover {
-    background-color: var(--widgettxtcolor);
+#menu .stile-bottone-2:visited {
+    color: var(--visitedlinkcolor);
+}
+
+#menu .stile-bottone-2:hover {
+    transform: scale(1.15);
+}
+
+
+button, .stile-bottone-1 {
+    font-size: 1em;
+    border-radius: 30px;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--widgetcolor);
+    color: var(--bgcolor);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 3px solid var(--widgetcolor);
+}
+
+button:hover, .stile-bottone-1:hover {
     color: var(--widgetcolor);
+    background-color: var(--widgettxtcolor);
+}
+
+.elimina, .elimina:hover {
+    color: #f00;
+    background-color:var(--bgcolor);
 }
 
 /* BREADCRUMB */
@@ -216,19 +238,17 @@ main h1 {
     margin: 1em auto;
 }
 
-.button{
-    border: none;
-    font-size: 1em;
-    border-radius: 30px;
-    padding: 0.6rem 1.2rem;
-    background-color: var(--bgcolor);
-    color: var(--widgetcolor);
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s;
+footer {
+    color: var(--bgcolor);
+    background-color: var(--widgetcolor);
+    padding: 2em 2em 2em 2em;
+    text-align: center;
 }
 
-.button:hover{
-    background-color: var(--widgettxtcolor);
-    color: var(--widgetcolor);
+form {
+    border: 3px solid var(--widgetcolor);
+    border-radius: 30px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: auto;
 }
