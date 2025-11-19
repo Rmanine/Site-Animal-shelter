@@ -60,7 +60,7 @@ header {
     width: 60px;
     height: 60px;
     min-width: 60px; /* Dimensione fissa perché non vogliamo che rimpicciolisca */
-    background-image: url("./img/logoChiaro.svg");
+    background-image: url("./img/logo_chiaro.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center left;
