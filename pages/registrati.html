@@ -40,15 +40,18 @@
         <p>Hai già un <span lang="en">account</span>? <a href="./accedi.html">Accedi</a></p>
 
         <form action="" method="post">
-            <label for="mail">Indirizzo <span lang="en">e-mail</span></label>
-            <input type="email" id="mail" name="mail" placeholder="mario.rossi@gmail.com" aria-describedby="info-mail" required>
-            <p class="info-form" id="info-mail">
-                Indirizzo <span lang="en">e-mail</span> attraverso il quale richiedere visite per le adozioni.
-            </p>
+            <label for="username"><span lang="en">Username</span> (Richiesto)</label>
+            <input type="text" id="username" name="username" placeholder="Es: mario.rossi" autocomplete="username" required>
+            <p>Nome del profilo. Deve contenere almeno 4 caratteri e può includere solo lettere.</p>
+
             
-            <label for="password"><span lang="en">Password</span></label>
-            <input type="password" id="password" name="password" aria-describedby="password-info" required>
-            <p class="info-form">Deve contenere:</p>
+            <label for="email">Indirizzo <span lang="en">e-mail</span> (Richiesto)</label>
+            <input type="email" id="email" name="email" placeholder="Es: mario.rossi@gmail.com" autocomplete="email" required>
+            <p>Indirizzo <span lang="en">e-mail</span> attraverso il quale richiedere visite per le adozioni.</p>
+            
+            <label for="password"><span lang="en">Password</span> (Richiesto)</label>
+            <input type="password" id="password" name="password" autocomplete="new-password" required>
+            <p>La password deve contenere:</p>
             <ul class="info-form" id="password-info">
                 <li>Almeno 8 caratteri</li>
                 <li>Una lettera minuscola (a-z)</li>
@@ -57,8 +60,8 @@
                 <li>Un numero (0-9)</li>
             </ul>
             
-            <label for="confirmed-password">Conferma <span lang="en">password</span></label>
-            <input type="password" id="confirmed-password" name="confirmed-password" required>
+            <label for="confirmed-password">Conferma <span lang="en">password</span> (Richiesto)</label>
+            <input type="password" id="confirmed-password" name="confirmed-password" autocomplete="new-password" required>
             
             <button type="submit">Registrati</button>
         </form>
