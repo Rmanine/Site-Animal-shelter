@@ -245,10 +245,34 @@ footer {
     text-align: center;
 }
 
+/*FORM*/
+
 form {
     border: 3px solid var(--widgetcolor);
     border-radius: 30px;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     margin: auto;
+    margin-top: 1em;
+    max-width: 600px;
+    width: 90%;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    width: 50%;
+    margin: 0.5em auto;
+    font-weight: bold;
+}
+
+
+input[type=text], input[type=password], input[type="email"]{
+    display: block;
+    margin: 0.5em auto;
+    margin-bottom: 2.5em;
+    width: 50%;
+    border: 2px solid var(--widgetcolor);
+    border-radius: 15px;
+    padding: 0.8em 1em;
 }
