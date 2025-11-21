@@ -276,3 +276,11 @@ input[type=text], input[type=password], input[type="email"]{
     border-radius: 15px;
     padding: 0.8em 1em;
 }
+
+.info-form{
+    width: 50%;
+    margin: -1.6em auto 1.5em auto; 
+    text-align: left;
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
