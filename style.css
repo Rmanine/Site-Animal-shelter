@@ -167,7 +167,6 @@ main h1 {
 }
 
 .secondo-contenuto {
-    margin-top: 3em;
     background-color: var(--widgetcolor);
     color: var(--bgcolor);
     padding: 1em 2em 2em 2em;
@@ -283,4 +282,11 @@ input[type=text], input[type=password], input[type="email"]{
     text-align: left;
     font-size: 0.9em;
     line-height: 1.4em;
+}
+
+/* FOOTER */
+.wave {
+    width: 100%;
+    display: block;      
+    margin-bottom: -5px;
 }
