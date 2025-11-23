@@ -7,12 +7,12 @@
 
 /* VARIABILI */
 :root {
-    --bgcolor: #eeede8;
-    --maintxtcolor: #000;
-    --widgetcolor: #3a5a40;
-    --widgettxtcolor: #bccba5;
-    --visitedlinkcolor: #0fabff;
-    --defaultvisitedlinkcolor: #b40b99;
+    --bgcolor: #f5f5f0;
+    --maintxtcolor: #1a1a1a;
+    --widgetcolor: #002b24;
+    --widgettxtcolor: #a5d6a7;
+    --visitedlinkcolor1: #ad522b;
+    --visitedlinkcolor2: #dd6a38;
 }
 
 html, body {
@@ -33,14 +33,13 @@ a:link {
 }
 
 a:visited {
-    color: var(--defaultvisitedlinkcolor);
+    color: var(--visitedlinkcolor1);
 }
 
 /* HEADER */
 header {
     padding: 0em 1em;
     margin: 1em auto;
-    
 }
 
 /* MENU */
@@ -86,42 +85,76 @@ header {
 }
 
 #menu a:visited {
-    color: var(--visitedlinkcolor);
+    color: var(--visitedlinkcolor2);
 }
 
-#menu .stile-bottone-2 {
-    color: var(--bgcolor);
-    background-color: var(--widgetcolor);
-    border-radius: 30px;
-    padding: 0.6rem 1.2rem;
-    border: 3px solid var(--widgettxtcolor);
-    transition: all 0.3s;
+#menu a.stile-bottone-1 {
+    background-color: var(--bgcolor);
+    color: var(--widgetcolor);
 }
 
-#menu .stile-bottone-2:visited {
-    color: var(--visitedlinkcolor);
+#menu a.stile-bottone-1:visited {
+    color: var(--visitedlinkcolor1);
 }
 
-#menu .stile-bottone-2:hover {
+#menu a.stile-bottone-1:hover {
     transform: scale(1.15);
 }
 
-
-button, .stile-bottone-1 {
+a.stile-bottone-1 {
+    background-color: var(--bgcolor);
+    color: var(--widgetcolor);
     font-size: 1em;
+    font-weight: bold;
+    border: 3px solid var(--bgcolor);
     border-radius: 30px;
     padding: 0.6rem 1.2rem;
-    background-color: var(--widgetcolor);
-    color: var(--bgcolor);
-    font-weight: bold;
     cursor: pointer;
+    display:inline-block;
+    margin-bottom: 0.8rem;
     transition: all 0.3s;
-    border: 3px solid var(--widgetcolor);
 }
 
-button:hover, .stile-bottone-1:hover {
+a.stile-bottone-1:visited {
+    color: var(--visitedlinkcolor1);
+}
+
+a.stile-bottone-1:hover {
+    background-color: var(--widgetcolor);
+    color: var(--bgcolor);
+}
+
+a.stile-bottone-1:visited:hover {
+    background-color: var(--widgetcolor);
+    color: var(--visitedlinkcolor2);
+}
+
+button, a.stile-bottone-2 {
+    background-color: var(--widgetcolor);
+    color: var(--bgcolor);
+    font-size: 1em;
+    font-weight: bold;
+    border: 3px solid var(--widgetcolor);
+    border-radius: 30px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    display:inline-block;
+    margin-bottom: 0.8rem;
+    transition: all 0.3s;
+}
+
+a.stile-bottone-2:visited {
+    color: var(--visitedlinkcolor2);
+}
+
+button:hover, a.stile-bottone-2:hover {
+    background-color: var(--bgcolor);
     color: var(--widgetcolor);
-    background-color: var(--widgettxtcolor);
+}
+
+a.stile-bottone-2:visited:hover {
+    background-color: var(--bgcolor);
+    color: var(--visitedlinkcolor1);
 }
 
 .elimina, .elimina:hover {
@@ -150,7 +183,7 @@ button:hover, .stile-bottone-1:hover {
 }
 
 #breadcrumb a:visited {
-    color: var(--visitedlinkcolor);
+    color: var(--visitedlinkcolor2);
 }
 
 main {
