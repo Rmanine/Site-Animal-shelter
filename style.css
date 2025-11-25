@@ -53,6 +53,7 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     font-size: 1.2em;
     font-weight: bold;
+    justify-content: space-between;
 }
 
 #menu h1 {
@@ -68,16 +69,10 @@ header {
 }
 
 #menu ul {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+    display: flex;  
     padding: 0 2em;
     gap: 3em;
     list-style: none;
-}
-
-#menu ul li {
-    display: block;
 }
 
 #menu a:link {
@@ -88,48 +83,8 @@ header {
     color: var(--visitedlinkcolor2);
 }
 
-#menu a.stile-bottone-1 {
-    background-color: var(--bgcolor);
-    color: var(--widgetcolor);
-}
-
-#menu a.stile-bottone-1:visited {
-    color: var(--visitedlinkcolor1);
-}
-
-#menu a.stile-bottone-1:hover {
-    transform: scale(1.15);
-}
-
-a.stile-bottone-1 {
-    background-color: var(--bgcolor);
-    color: var(--widgetcolor);
-    font-size: 1em;
-    font-weight: bold;
-    border: 3px solid var(--bgcolor);
-    border-radius: 30px;
-    padding: 0.6rem 1.2rem;
-    cursor: pointer;
-    display:inline-block;
-    margin-bottom: 0.8rem;
-    transition: all 0.3s;
-}
-
-a.stile-bottone-1:visited {
-    color: var(--visitedlinkcolor1);
-}
-
-a.stile-bottone-1:hover {
-    background-color: var(--widgetcolor);
-    color: var(--bgcolor);
-}
-
-a.stile-bottone-1:visited:hover {
-    background-color: var(--widgetcolor);
-    color: var(--visitedlinkcolor2);
-}
-
-button, a.stile-bottone-2 {
+button, .stile-bottone-1, .stile-bottone-2 {
+    display: inline-block;
     background-color: var(--widgetcolor);
     color: var(--bgcolor);
     font-size: 1em;
@@ -137,27 +92,49 @@ button, a.stile-bottone-2 {
     border: 3px solid var(--widgetcolor);
     border-radius: 30px;
     padding: 0.6rem 1.2rem;
-    cursor: pointer;
-    display:inline-block;
     margin-bottom: 0.8rem;
     transition: all 0.3s;
 }
 
-a.stile-bottone-2:visited {
+button {
+    cursor: pointer;
+}
+
+.stile-bottone-1 {
+    background-color: var(--bgcolor);
+    color: var(--widgetcolor);
+    border: 3px solid var(--bgcolor);
+}
+
+.stile-bottone-1:hover {
+    background-color: var(--widgetcolor);
+    color: var(--bgcolor);
+}
+
+.stile-bottone-1:visited {
+    color: var(--visitedlinkcolor1);    
+}
+
+.stile-bottone-1:visited:hover {
+    color: var(--visitedlinkcolor2);
+    background-color: var(--widgetcolor);    
+}
+
+.stile-bottone-2:visited {
     color: var(--visitedlinkcolor2);
 }
 
-button:hover, a.stile-bottone-2:hover {
+button:hover, .stile-bottone-2:hover {
     background-color: var(--bgcolor);
     color: var(--widgetcolor);
 }
 
-a.stile-bottone-2:visited:hover {
-    background-color: var(--bgcolor);
+.stile-bottone-2:visited:hover {
     color: var(--visitedlinkcolor1);
+    background-color: var(--bgcolor);
 }
 
-.elimina, .elimina:hover {
+.elimina {
     color: #f00;
     background-color:var(--bgcolor);
 }
@@ -227,9 +204,16 @@ main h1 {
     border-radius: 30px;
 }
 
-.link-to {
+.aiuto {
     font-size: 1.3em;
     font-weight: bold;
+    position: absolute;
+    text-indent: -999em;
+}
+
+.aiuto:focus {
+    position: static;
+    text-indent: 0em;
 }
 
 .terzo-contenuto {
