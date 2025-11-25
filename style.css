@@ -104,6 +104,7 @@ button {
     background-color: var(--bgcolor);
     color: var(--widgetcolor);
     border: 3px solid var(--bgcolor);
+    margin: 0;
 }
 
 .stile-bottone-1:hover {
@@ -144,8 +145,7 @@ button:hover, .stile-bottone-2:hover {
 #breadcrumb {
     display: inline-block;
     white-space: nowrap;
-    background: var(--widgetcolor);
-    color: var(--bgcolor);
+    color: var(--maintxtcolor);
     border-radius: 10px;
     padding: 0.5rem 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -153,14 +153,15 @@ button:hover, .stile-bottone-2:hover {
     margin-left: 50%;
     transform: translateX(-50%);
     font-size: 1.2em;
+    border: 3px solid var(--widgetcolor);
 }
 
 #breadcrumb a:link {
-    color: var(--bgcolor);
+    color: var(--maintxtcolor);
 }
 
 #breadcrumb a:visited {
-    color: var(--visitedlinkcolor2);
+    color: var(--visitedlinkcolor1);
 }
 
 main {
