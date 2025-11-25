@@ -24,8 +24,14 @@ html, body {
 body {
     background-color: var(--bgcolor);
     color: var(--maintxtcolor);
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: auto;
+}
+
+header, main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a:link {
@@ -180,7 +186,17 @@ main h1 {
 .secondo-contenuto {
     background-color: var(--widgetcolor);
     color: var(--bgcolor);
-    padding: 1em 2em 2em 2em;
+    padding: 1em 0 2em 0;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+.secondo-contenuto > * {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .secondo-contenuto h2, .terzo-contenuto h2 {
@@ -192,8 +208,8 @@ main h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
-    padding: 0;
-    margin: 0;
+    padding: 0 2em;
+    margin: 0 auto;
 }
 
 .secondo-contenuto ol li {
@@ -258,8 +274,20 @@ main h1 {
 footer {
     color: var(--bgcolor);
     background-color: var(--widgetcolor);
-    padding: 2em 2em 2em 2em;
+    padding: 2em 0;
     text-align: center;
+}
+
+footer > * {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+footer .stile-bottone-1 {
+    margin-bottom: 3em;
 }
 
 /*FORM*/
@@ -307,4 +335,5 @@ input[type=text], input[type=password], input[type="email"]{
     width: 100%;
     display: block;      
     margin-bottom: -5px;
+    padding: 0;
 }
