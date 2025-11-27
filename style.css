@@ -260,6 +260,24 @@ main h1 {
     margin: auto;
 }
 
+.terzo-contenuto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.terzo-contenuto div.terzo-contenuto-sottocontenuto {
+    max-width: 100%;
+    text-align: left;
+    padding: 2em;
+}
+
+.terzo-contenuto div.terzo-contenuto-sottocontenuto dd{
+    margin: 0;
+    max-width: 100%;
+    text-align: left;
+}
+
 .piu-info {
     max-width: 50%;
     margin: auto;
@@ -269,6 +287,13 @@ main h1 {
     font-weight: bold;
     font-size: 1.2em;
     margin: 1em auto;
+}
+
+hr {
+    border: 3px solid var(--widgetcolor);
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 3em;
 }
 
 footer {
