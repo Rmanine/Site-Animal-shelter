@@ -368,8 +368,10 @@ input[type=text], input[type=password], input[type="email"]{
 
 /* FOOTER */
 .wave {
-    width: 100%;
-    display: block;      
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    display: block;
+    margin-top: -5px;
     margin-bottom: -5px;
-    padding: 0;
 }
