@@ -345,12 +345,19 @@ form {
     width: 90%;
 }
 
-form label, form p {
+form label {
     display: block;
     text-align: left;
     width: 50%;
     margin: 0.5em auto;
     font-weight: bold;
+}
+
+form p {
+    display: block;
+    text-align: left;
+    width: 50%;
+    margin: 0.5em auto;
 }
 
 input[type=text], input[type=password], input[type="email"], input[type="tel"]{
@@ -369,10 +376,12 @@ input[type=text], input[type=password], input[type="email"], input[type="tel"]{
     text-align: left;
     font-size: 0.9em;
     line-height: 1.4em;
+    list-style-position: inside;
 }
 
 .req {
   color: 000;
+  font-weight: bold;
 }
 
 /* FOOTER */
