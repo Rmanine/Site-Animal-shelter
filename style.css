@@ -98,6 +98,7 @@ button, a.stile-bottone-1, a.stile-bottone-2, a.stile-bottone-3 {
     border: 3px solid var(--widgetcolor);
     border-radius: 30px;
     padding: 0.6rem 1.2rem;
+    margin-top: 0.8rem;
     margin-bottom: 0.8rem;
     transition: all 0.3s;
 }
@@ -277,13 +278,18 @@ main h1 {
     border-radius: 30px;
 }
 
+.terzo-contenuto h1, h2 {
+    font-size: 2em;
+    line-height: 1em;
+}
+
 .terzo-contenuto div.terzo-contenuto-sottocontenuto {
     max-width: 100%;
     text-align: left;
     padding: 2em;
 }
 
-.terzo-contenuto div.terzo-contenuto-sottocontenuto dd{
+.terzo-contenuto div.terzo-contenuto-sottocontenuto dd {
     margin: 0;
     max-width: 100%;
     text-align: left;
@@ -339,7 +345,7 @@ form {
     width: 90%;
 }
 
-form label {
+form label, form p {
     display: block;
     text-align: left;
     width: 50%;
@@ -347,8 +353,7 @@ form label {
     font-weight: bold;
 }
 
-
-input[type=text], input[type=password], input[type="email"]{
+input[type=text], input[type=password], input[type="email"], input[type="tel"]{
     display: block;
     margin: 0.5em auto;
     margin-bottom: 2.5em;
@@ -364,6 +369,10 @@ input[type=text], input[type=password], input[type="email"]{
     text-align: left;
     font-size: 0.9em;
     line-height: 1.4em;
+}
+
+.req {
+  color: 000;
 }
 
 /* FOOTER */

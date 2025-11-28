@@ -35,31 +35,57 @@
     </nav>
 
     <main id="contenuto">
-        <h1>Diventa volontario</h1>
-        <p>Ogni giorno ci sono animali che aspettano una seconda possibilità, desiderosi di trovare qualcuno che si
-            prenda cura di loro, anche solo per un momento.</p>
-        <p>Diventare volontario significa questo: donare il proprio tempo, le proprie attenzioni e il proprio affetto.
-            Non servono esperienze particolari ma solo la voglia di esserci. Ogni gesto, anche il più piccolo, può fare
-            la differenza.</p>
-        <p>Compila il modulo a seguire per aiutarci nella nostra sfida: dare una nuova possibilità a chi non ne ha. Ti
-            contatteremo presto per conoscerti e accompagnarti nei primi passi come volontario. </p>
-        <img src="../img/diventa_volontario.JPG" alt="">
+        <section class="terzo-contenuto">
+            <dl>
+                <div class="terzo-contenuto-sottocontenuto">
+                    <dt>
+                        <h1>Diventa volontario</h1>
+                    </dt>
+                    <dd>
+                        <p>
+                            Ogni giorno ci sono animali che aspettano una seconda possibilità, desiderosi di trovare qualcuno che si prenda cura di loro, anche solo per un momento.
+                        </p>
+                        <p>
+                            Diventare volontario significa questo: donare il proprio tempo, le proprie attenzioni e il proprio affetto. Non servono esperienze particolari ma solo la voglia di esserci. Ogni gesto, anche il più piccolo, può fare la differenza.
+                        </p>
+                        <p>
+                            Diventando volontario non aiuterai solo noi nel nostro lavoro ma potrai anche rendere felici molti animali che hanno bisogno di amore quando non ne hanno avuto abbastanza in passato. 
+                        </p>
+                    </dd>
+                </div>
+                <div>
+                    <img src="../img/diventa_volontario.JPG" alt="">
+                </div>
+            </dl>
+        </section>
+        <div class="terzo-contenuto">
+            <h2>Compila il modulo a seguire per diventare volontario</h2>
+            <p>
+                Ti contatteremo presto per conoscerti e accompagnarti nei primi passi come volontario. 
+            </p>
+        </div>
         <form action="" method="POST">
-            <label for="nome_cognome">Nome e Cognome</label>
+            <label for="nome_cognome">Nome e Cognome: <span class="req">*</span></label>
             <input type="text" id="nome_cognome" name="nome_cognome" required>
 
-            <label for="email">Indirizzo <span lang="en">e-mail</span></label>
-            <input type="email" id="email" name="email" required>
+            <label for="telefono">Numero di telefono: <span class="req">*</span></label>
+            <input type="tel" id="telefono" name="telefono" required>
 
-            <input type="submit" name="invia" value="Invia">
+            <label for="email">Indirizzo <span lang="en">e-mail: </span><span class="req">*</span></label>
+            <input type="email" id="email" name="email" required>
+            
+            <p><span class="req">*</span> - Required field</p>
+            <button type="submit" name="invia" value="Invia">Invia</button>
         </form>
     </main>
 
-    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
-        <path fill="#002b24" d="M0,160L34.3,140C68.6,120,137,82,206,90C274.3,98,343,150,411,160C480,170,549,130,617,115C685.7,100,754,108,823,130C891.4,152,960,190,1029,178C1097.1,166,1166,105,1234,90C1302.9,75,1371,105,1406,120L1440,135L1440,200L1405.7,200C1371.4,200,1303,200,1234,200C1165.7,200,1097,200,1029,200C960,200,891,200,823,200C754.3,200,686,200,617,200C548.6,200,480,200,411,200C342.9,200,274,200,206,200C137.1,200,69,200,34,200L0,200Z"></path>
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 140">
+        <path fill="#002b24" fill-opacity="1"
+            d="M0,90L80,83C160,76,320,60,480,73C640,90,800,125,960,130C1120,135,1280,115,1360,105L1440,90V140H0Z">
+        </path>
     </svg>
     <footer>
-        <a class="stile-bottone-1" href="#contenuto">Torna al contenuto</a>
+        <a class="stile-bottone-3" href="#contenuto">Torna al contenuto</a>
         <p>
             Tutte le immagini presenti sul sito sono state fornite da X <span lang="en">Copyright</span> 2025 Zampa
             Amica. Tutti i diritti riservati.
