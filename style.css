@@ -306,6 +306,10 @@ main h1 {
     margin: 1em auto;
 }
 
+.piu-info span {
+    display: block;
+}
+
 hr {
     border: 3px solid var(--widgetcolor);
     border-radius: 30px;
