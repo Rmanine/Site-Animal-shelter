@@ -89,7 +89,7 @@ header {
     color: var(--visitedlinkcolor2);
 }
 
-button, .stile-bottone-1, .stile-bottone-2 {
+button, a.stile-bottone-1, a.stile-bottone-2, a.stile-bottone-3 {
     display: inline-block;
     background-color: var(--widgetcolor);
     color: var(--bgcolor);
@@ -106,23 +106,23 @@ button {
     cursor: pointer;
 }
 
-.stile-bottone-1 {
+#menu a.stile-bottone-1 {
     background-color: var(--bgcolor);
     color: var(--widgetcolor);
     border: 3px solid var(--bgcolor);
     margin: 0;
 }
 
-.stile-bottone-1:hover {
+#menu a.stile-bottone-1:hover {
     background-color: var(--widgetcolor);
     color: var(--bgcolor);
 }
 
-.stile-bottone-1:visited {
-    color: var(--visitedlinkcolor1);    
+#menu a.stile-bottone-1:visited {
+    color: var(--visitedlinkcolor1);
 }
 
-.stile-bottone-1:visited:hover {
+#menu a.stile-bottone-1:visited:hover {
     color: var(--visitedlinkcolor2);
     background-color: var(--widgetcolor);    
 }
@@ -144,6 +144,17 @@ button:hover, .stile-bottone-2:hover {
 .elimina {
     color: #f00;
     background-color:var(--bgcolor);
+}
+
+a.stile-bottone-3 {
+    color: var(--widgetcolor);
+    background-color: var(--bgcolor);
+    border: 3px solid var(--bgcolor);
+}
+
+a.stile-bottone-3:hover {
+    color: var(--bgcolor);
+    background-color: var(--widgetcolor);
 }
 
 /* BREADCRUMB */
