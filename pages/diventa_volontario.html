@@ -66,13 +66,13 @@
         </div>
         <form action="" method="POST">
             <label for="nome_cognome">Nome e Cognome: <span class="req">*</span></label>
-            <input type="text" id="nome_cognome" name="nome_cognome" required>
+            <input type="text" id="nome_cognome" name="nome_cognome" autocomplete="name" required>
 
             <label for="telefono">Numero di telefono: <span class="req">*</span></label>
-            <input type="tel" id="telefono" name="telefono" required>
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel-national" required>
 
             <label for="email">Indirizzo <span lang="en">e-mail: </span><span class="req">*</span></label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" autocomplete="email" required>
             
             <p><span class="req">*</span> - Indica campi richiesti</p>
             <button type="submit" name="invia" value="Invia">Invia</button>
