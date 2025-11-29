@@ -26,6 +26,7 @@ body {
     color: var(--maintxtcolor);
     /*max-width: 1200px;*/
     margin: auto;
+    overflow-x: hidden;
 }
 
 header, main {
@@ -182,6 +183,8 @@ a.stile-bottone-3:hover {
     color: var(--visitedlinkcolor1);
 }
 
+/* MAIN */
+
 main {
     padding: 2rem;
     text-align: center;
@@ -225,12 +228,18 @@ main h1 {
 }
 
 .secondo-contenuto ol li {
+    list-style-position: inside;
     background-color: var(--widgettxtcolor);
     color: var(--maintxtcolor);
-    list-style: none;
     padding: 1em;
     flex: 1 1 300px;
     border-radius: 30px;
+}
+
+.secondo-contenuto ol li::marker {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--widgetcolor);
 }
 
 .aiuto {
@@ -317,10 +326,12 @@ hr {
     margin: 3em;
 }
 
+/* FOOTER */
+
 footer {
     color: var(--bgcolor);
     background-color: var(--widgetcolor);
-    padding: 2em 0;
+    padding: 2em;
     text-align: center;
 }
 
@@ -328,11 +339,9 @@ footer > * {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2em;
-    padding-right: 2em;
 }
 
-footer .stile-bottone-1 {
+footer .stile-bottone-3 {
     margin-bottom: 3em;
 }
 
@@ -388,7 +397,6 @@ input[type=text], input[type=password], input[type="email"], input[type="tel"]{
   font-weight: bold;
 }
 
-/* FOOTER */
 .wave {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
