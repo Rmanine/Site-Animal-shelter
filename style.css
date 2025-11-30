@@ -21,6 +21,10 @@ html, body {
     line-height: 1.5em;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bgcolor);
     color: var(--maintxtcolor);
@@ -76,7 +80,8 @@ header {
 }
 
 #menu ul {
-    display: flex;  
+    display: flex;
+    overflow-x: hidden; /* Correzione MOMENTANEA per evitare lo split dello schermo su mobile. DA CAMBIARE */
     padding: 0 2em;
     gap: 3em;
     list-style: none;
@@ -219,6 +224,7 @@ main h1 {
 }
 
 .secondo-contenuto ol {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
@@ -228,18 +234,22 @@ main h1 {
 }
 
 .secondo-contenuto ol li {
-    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
     background-color: var(--widgettxtcolor);
     color: var(--maintxtcolor);
     padding: 1em;
     flex: 0 0 300px;
     border-radius: 30px;
+    counter-increment: item;
 }
 
-.secondo-contenuto ol li::marker {
+.secondo-contenuto ol li::before { /* Marker non permette modifiche di posizione, solo ::before */
+    content: counter(item);
     font-size: 2em;
     font-weight: bold;
     color: var(--widgetcolor);
+    margin-bottom: 0.5em;
 }
 
 .aiuto {
@@ -260,14 +270,11 @@ main h1 {
 }
 
 .terzo-contenuto dl {
-    display: flex;
-    flex-wrap: wrap;
     padding: 0;
     margin: 2em 0;
 }
 
 .terzo-contenuto dl div {
-    flex: 1 1 300px;
     padding: 1em;
 }
 
@@ -414,6 +421,6 @@ input[type=text], input[type=password], input[type="email"], input[type="tel"]{
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     display: block;
-    margin-top: -5px;
-    margin-bottom: -5px;
+    margin-top: -2px;
+    margin-bottom: -2px;
 }
