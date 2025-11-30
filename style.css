@@ -270,16 +270,20 @@ main h1 {
 }
 
 .terzo-contenuto dl {
+    display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 2em 0;
 }
 
 .terzo-contenuto dl div {
+    flex: 1 1 300px;
     padding: 1em;
 }
 
 .terzo-contenuto dt {
     font-size: 1.5em;
+    font-weight: bold;
     margin-bottom: 0.5em;
 }
 
@@ -297,18 +301,6 @@ main h1 {
 .terzo-contenuto h1, h2 {
     font-size: 2em;
     line-height: 1em;
-}
-
-.terzo-contenuto div.terzo-contenuto-sottocontenuto {
-    max-width: 100%;
-    text-align: left;
-    padding: 2em;
-}
-
-.terzo-contenuto div.terzo-contenuto-sottocontenuto dd {
-    margin: 0;
-    max-width: 100%;
-    text-align: left;
 }
 
 .piu-info {
